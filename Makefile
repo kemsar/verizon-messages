@@ -16,7 +16,7 @@ build:
 
 .PHONY: archive
 archive:
-	zip -r $(DIST_DIR)/todoist-linux.zip $(DIST_DIR)/linux-unpacked/*
+	zip -r $(DIST_DIR)/verizonMessages-linux.zip $(DIST_DIR)/linux-unpacked/*
 
 .PHONY: set-version
 set-version:

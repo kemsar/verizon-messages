@@ -1,0 +1,72 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<h1 id="todoist-for-linux">Todoist for Linux</h1>
+<p><a href="https://github.com/cyfrost/todoist-linux/releases/latest"><img alt="GitHub release" src="https://img.shields.io/badge/current%20release-v1.0-blue.svg" /></a>
+<a href="https://github.com/cyfrost/easyrun/blob/master/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-orange.svg" /></a>
+<a href="http://hits.dwyl.com/cyfrost/todoist-linux"><img alt="HitCount" src="http://hits.dwyl.com/cyfrost/todoist-linux.svg" /></a></p>
+<p><a href="https://todoist.com">Todoist</a> is a productivity app (a To-Do list manager) used by millions of people around the world. Unfortunately, there's <a href="https://en.todoist.com/downloads">no official Todoist Linux app</a> yet for reasons unknown. This project develops a Todoist Linux client by wrapping the <a href="https://todoist.com/app">Todoist Web app</a> in a friendly interface along with a bunch of other useful features (Startup settings, and Global Keyboard shortcuts).</p>
+<h2 id="motivation">Motivation</h2>
+<p>When starting out, my exasperation over the lack of a native Todoist Linux client was midly amusing. After a short hunt, I found <a href="https://github.com/KryDos/todoist-linux">this</a> project, created by <a href="https://github.com/KryDos">Ruslan Bekenev</a>, was already in the works. I liked it very much but it lacked some features I deemed essential to my workflow, This project builds on top of it to address my needs.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Auto start Todoist on startup (Minmize on startup available).</li>
+<li>Nifty keyboard shortcuts to globally access Todoist actions (such as quickly adding tasks to Todoist).</li>
+<li>Nifty toggleable TrayIcon with useful actions (TrayContextMenu, Single click to activate, etc).</li>
+<li>Always Up-to-date! (it's wrapping the web version, remember?) </li>
+</ul>
+<p>Note: I use <a href="https://www.gnome-look.org/p/1013714/">this</a> macOS theme on my GNOME desktop, hence the screencap's titlebars ;)</p>
+<p><img alt="img" src="https://i.imgur.com/yfNZ50m.png" /></p>
+<h2 id="download">Download</h2>
+<p>This project currently provides <code>DEB</code> and <code>RPM</code> packages in both <code>x86</code> and <code>x64</code> architectures. Most commonly-used GNU/Linux distros use either <code>DEB</code> or <code>RPM</code> packaging format (such as Debian; and its derivatives, the Red-Hat ecosystem --Fedora, CentOS, RHEL etc., and OpenSUSE too).</p>
+<p><a href="https://github.com/cyfrost/todoist-linux/releases">Go to the Releases page</a> and grab the latest compatible package for your machine.</p>
+<p>For the unininitated, if you're using Ubuntu, get the <code>.deb</code> package; or the <code>.rpm</code> package if your distro is Fedora/CentOS/RHEL/OpenSUSE.</p>
+<h2 id="installation">Installation</h2>
+<p>After downloading the suitable package from the <a href="https://github.com/cyfrost/todoist-linux/releases">releases</a> page, open up a new Terminal window and use the following instructions to install the downloaded package:</p>
+<p>For <code>.DEB</code> users:</p>
+<p><code>$ sudo apt install &lt;file_name.deb&gt;</code> (ex: <code>sudo apt install Todoist_1.0.0_amd64.deb</code>)</p>
+<p>For <code>.RPM</code> users:</p>
+<p><code>$ sudo yum install &lt;file_name.rpm&gt;</code> (ex: <code>sudo dnf install Todoist_1.0.0.x86_x64.rpm</code>)</p>
+<h2 id="usage-instructions">Usage Instructions</h2>
+<p>Todoist is accessible from Installed Applications list, you can change settings by either <code>right-clicking on the tray icon &gt; Options</code> or in the main window <code>hit Alt key and go to File &gt; Options</code>. The configuration is saved in <code>~/.config/Todoist/settings.json</code>.</p>
+<h2 id="global-keyboard-shortcuts">Global Keyboard Shortcuts</h2>
+<p>Keyboard shortcuts come in handy when you need to add a Task to Todoist but without having the window open at the moment.</p>
+<ul>
+<li>Ctrl + Alt + A - global shortcut to open the "Add Quick Task" action in Todoist app. </li>
+<li>Ctrl + Alt + T - Shows or hides the Todoist window.</li>
+<li>ESC - hides the window if isFocused() promises true.</li>
+<li>All other Todoist's shortcuts are accessible inside the window.</li>
+</ul>
+<p>These bindings may not always work, for example, in cases where current bindings are globally registered by another application inb4 Todoist gets a chance --you'll have to quit or unregister those bindings and run Todoist again.</p>
+<h2 id="removal-instructions">Removal Instructions</h2>
+<p>If you'd like to remove <code>Todoist for Linux</code> from your machine:</p>
+<ul>
+<li>
+<p>run <code>$ sudo apt remove Todoist</code> if you installed the .deb package</p>
+</li>
+<li>
+<p>run <code>$ sudo yum remove Todoist</code> if you installed the .rpm package</p>
+</li>
+</ul>
+<p>If you'd like to remove, the configuration/data is stored in <code>~/.config/Todoist</code>.</p>
+<h2 id="build-instructions">Build Instructions</h2>
+<p>Visit (https://nodejs.org/en/download/package-manager/) and follow your distro-specific instructions to install (Node.js + npm).</p>
+<h3 id="build-project">Build project:</h3>
+<ul>
+<li>run <code>$ make build</code> in the extracted project directory.</li>
+</ul>
+<p>The below command will automatically:</p>
+<ol>
+<li>Download and install project dependencies</li>
+<li>Download and install app dependencies</li>
+<li>Build the app</li>
+<li>Run the app in debug mode</li>
+</ol>
+<h3 id="building-application-packages">Building application packages:</h3>
+<p>If you're looking for a way to build <code>.deb</code> or <code>.rpm</code> or <code>.AppImage</code> or other distro-specific packages yourself:</p>
+<p>run <code>$ make packages</code> in the extracted project directory. This will create (x86 and x64) LINUX ONLY packages for targets specified in the <code>package.json</code> file. The packages can be found in the <code>&lt;proj_root&gt;/dist</code> directory.</p>
+<h2 id="contributing">Contributing</h2>
+<p>Feel free to poke around the code base and see if you can improve the app, which is probably the best part of FOSS devel. If you need help, feel free to reach out to me at <a href="mailto:cyrus.frost@hotmail.com">cyrus.frost@hotmail.com</a>. Good luck!</p>
+<h2 id="reporting-bugsissues">Reporting Bugs/Issues</h2>
+<p>If you find an issue while using this app, please open a new Issue in the "Issues" tab and we'll go from there. If you already know how to fix it, please create a new Pull Request, I'll be more than happy to review and merge it sooner than later.</p>
+<h2 id="license">License</h2>
+<p>This project is made available under the MIT License, you can obtain a full copy of it <a href="https://opensource.org/licenses/MIT">here</a>.</p>
+</body></html>

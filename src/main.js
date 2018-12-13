@@ -16,16 +16,16 @@
     const url = require('url');
     const AutoLaunch = require("auto-launch");
     const fileSystem = require('fs');
-    const mainUrl = 'https://todoist.com/app';
+    const mainUrl = 'https://web.vma.vzw.com/vma/webs2/Message.do';
 
     let currentWindowState = 'shown';
 
 
     var shouldQuit = app.makeSingleInstance(function(commandLine, workingDirectory) {
         // Someone tried to run a second instance, we should focus our window.
-        if (todoist.window) {
-            todoist.window.show();
-            todoist.window.focus();
+        if (verizonMessages.window) {
+            verizonMessages.window.show();
+            verizonMessages.window.focus();
         }
     });
 
@@ -84,15 +84,15 @@
         applyConfiguration() {
 
             if (config.get("maximized") && config.get("startminimized") != true) {
-                todoist.window.maximize();
+                verizonMessages.window.maximize();
             }
 
-            if (config.get("trayicon") != false && todoist.tray == undefined) {
-                todoist.createTray();
-            } else if (config.get("trayicon") == false && todoist.tray != undefined) {
+            if (config.get("trayicon") != false && verizonMessages.tray == undefined) {
+                verizonMessages.createTray();
+            } else if (config.get("trayicon") == false && verizonMessages.tray != undefined) {
 
-                todoist.tray.destroy();
-                todoist.tray = undefined;
+                verizonMessages.tray.destroy();
+                verizonMessages.tray = undefined;
             }
 
             if (config.get("autostart") == true) {
@@ -110,8 +110,8 @@
                     }
                 });
             }
-            todoist.window.setMenuBarVisibility(config.get("autoHideMenuBar") != true);
-            todoist.window.setAutoHideMenuBar(config.get("autoHideMenuBar") == true);
+            verizonMessages.window.setMenuBarVisibility(config.get("autoHideMenuBar") != true);
+            verizonMessages.window.setAutoHideMenuBar(config.get("autoHideMenuBar") == true);
         },
 
         resetDefaultSettings() {
@@ -131,7 +131,7 @@
         }
         config.saveTimeout = setTimeout(function() {
 
-            config.set("maximized", todoist.window.isMaximized());
+            config.set("maximized", verizonMessages.window.isMaximized());
             if (config.currentSettings == undefined || JSON.stringify(config.currentSettings) == "") {
                 // TODO: if we land here, we need to figure why and how. And fix that
 
@@ -159,13 +159,13 @@
 
     global.config.init();
 
-    global.todoist = {
+    global.verizonMessages = {
 
         init() {
-            todoist.tray = undefined;
-            todoist.createMenu();
-            todoist.clearCache();
-            todoist.openWindow();
+            verizonMessages.tray = undefined;
+            verizonMessages.createMenu();
+            verizonMessages.clearCache();
+            verizonMessages.openWindow();
             config.applyConfiguration();
 
         },
@@ -186,7 +186,7 @@
                         {
                             label: 'Clear App Data',
                             click: function click() {
-                                todoist.clearAppData();
+                                verizonMessages.clearAppData();
                             }
                         },
                         {
@@ -229,7 +229,7 @@
                         label: 'Copy Current URL',
                         accelerator: 'CmdOrCtrl+L',
                         click: function click() {
-                            clipboard.writeText(todoist.window.webContents.getURL());
+                            clipboard.writeText(verizonMessages.window.webContents.getURL());
                         }
                     }, {
                         label: 'Paste',
@@ -252,19 +252,19 @@
                         label: 'Back',
                         accelerator: 'CmdOrCtrl+[',
                         click: function click() {
-                            todoist.window.webContents.goBack();
+                            verizonMessages.window.webContents.goBack();
                         }
                     }, {
                         label: 'Forward',
                         accelerator: 'CmdOrCtrl+]',
                         click: function click() {
-                            todoist.window.webContents.goForward();
+                            verizonMessages.window.webContents.goForward();
                         }
                     }, {
                         label: 'Reload',
                         accelerator: 'CmdOrCtrl+R',
                         click: function click(item) {
-                            todoist.window.reload();
+                            verizonMessages.window.reload();
                         }
                     }, {
                         type: 'separator'
@@ -272,7 +272,7 @@
                         label: 'Toggle Full Screen',
                         accelerator: 'F11',
                         click: function click(item, focusedWindow) {
-                            todoist.window.setFullScreen(!todoist.window.isFullScreen());
+                            verizonMessages.window.setFullScreen(!verizonMessages.window.isFullScreen());
                         }
                     }]
                 }, {
@@ -304,8 +304,8 @@
 
 
             ];
-            todoist.menu = Menu.buildFromTemplate(template);
-            Menu.setApplicationMenu(todoist.menu);
+            verizonMessages.menu = Menu.buildFromTemplate(template);
+            Menu.setApplicationMenu(verizonMessages.menu);
         },
 
 
@@ -316,12 +316,12 @@
         },
 
         createTray() {
-            todoist.tray = new Tray(path.join(__dirname, '/assets/icons/icon_tray.png'));
-            todoist.trayContextMenu = Menu.buildFromTemplate([{
+            verizonMessages.tray = new Tray(path.join(__dirname, '/assets/icons/icon_tray.png'));
+            verizonMessages.trayContextMenu = Menu.buildFromTemplate([{
                     label: 'Show',
                     click: function() {
-                        todoist.window.show();
-                        todoist.window.focus();
+                        verizonMessages.window.show();
+                        verizonMessages.window.focus();
                     }
                 },
                 {
@@ -330,7 +330,7 @@
                 {
                     label: 'Reset app',
                     click: function() {
-                        todoist.clearAppData();
+                        verizonMessages.clearAppData();
                         config.currentSettings = config.defaultSettings;
                         config.saveConfiguration();
                         if (settings.window) {
@@ -339,9 +339,9 @@
                         if (about.window) {
                             about.window.close();
                         }
-                        todoist.window.reload();
-                        todoist.window.show();
-                        todoist.window.focus();
+                        verizonMessages.window.reload();
+                        verizonMessages.window.show();
+                        verizonMessages.window.focus();
                     }
                 },
                 {
@@ -367,102 +367,102 @@
                 }
             ]);
 
-            todoist.tray.on('click', () => {
-                todoist.window.show();
-                todoist.window.focus();
+            verizonMessages.tray.on('click', () => {
+                verizonMessages.window.show();
+                verizonMessages.window.focus();
             });
 
-            todoist.tray.setToolTip('Todoist');
-            todoist.tray.setContextMenu(todoist.trayContextMenu);
+            verizonMessages.tray.setToolTip('Verizon Messages');
+            verizonMessages.tray.setContextMenu(verizonMessages.trayContextMenu);
 
         },
 
 
         openWindow() {
             // Create the browser window.
-            todoist.window = new BrowserWindow({
+            verizonMessages.window = new BrowserWindow({
                 "y": config.get("posY"),
                 "x": config.get("posX"),
                 "width": config.get("width"),
                 "height": config.get("height"),
                 "minWidth": 480,
                 "minHeight": 480,
-                "title": "Todoist",
+                "title": "Verizon Messages",
                 "show": false,
                 "autoHideMenuBar": config.get("autoHideMenuBar") == true,
                 "icon": path.join(__dirname, '/assets/icons/icon.png')
             });
 
-            todoist.window.loadURL(mainUrl);
+            verizonMessages.window.loadURL(mainUrl);
 
             if (config.get("startminimized") != true) {
-                todoist.window.show();
+                verizonMessages.window.show();
             }
 
-            todoist.window.on('move', (e, evt) => {
-                config.set("posX", todoist.window.getBounds().x);
-                config.set("posY", todoist.window.getBounds().y);
-                config.set("width", todoist.window.getBounds().width);
-                config.set("height", todoist.window.getBounds().height);
+            verizonMessages.window.on('move', (e, evt) => {
+                config.set("posX", verizonMessages.window.getBounds().x);
+                config.set("posY", verizonMessages.window.getBounds().y);
+                config.set("width", verizonMessages.window.getBounds().width);
+                config.set("height", verizonMessages.window.getBounds().height);
                 config.saveConfiguration();
             });
 
-            todoist.window.on('resize', (e, evt) => {
-                config.set("posX", todoist.window.getBounds().x);
-                config.set("posY", todoist.window.getBounds().y);
-                config.set("width", todoist.window.getBounds().width);
-                config.set("height", todoist.window.getBounds().height);
+            verizonMessages.window.on('resize', (e, evt) => {
+                config.set("posX", verizonMessages.window.getBounds().x);
+                config.set("posY", verizonMessages.window.getBounds().y);
+                config.set("width", verizonMessages.window.getBounds().width);
+                config.set("height", verizonMessages.window.getBounds().height);
                 config.saveConfiguration();
             });
 
-            todoist.window.on('close', (e) => {
+            verizonMessages.window.on('close', (e) => {
                 if (settings.window) {
                     settings.window.close();
                     settings.window = null;
                 }
 
-                if (todoist.tray == undefined) {
+                if (verizonMessages.tray == undefined) {
                     app.quit();
-                } else if (todoist.window.forceClose !== true) {
+                } else if (verizonMessages.window.forceClose !== true) {
                     e.preventDefault();
-                    todoist.window.hide();
+                    verizonMessages.window.hide();
                 }
             });
 
 
             app.on('before-quit', () => {
-                todoist.window.forceClose = true;
+                verizonMessages.window.forceClose = true;
             });
 
             // react on close and minimzie
-            todoist.window.on('minimize', function(event) {
+            verizonMessages.window.on('minimize', function(event) {
                 event.preventDefault();
-                todoist.window.hide();
+                verizonMessages.window.hide();
             });
 
-            todoist.window.on('close', function(event) {
+            verizonMessages.window.on('close', function(event) {
                 if (!app.isQuiting) {
                     event.preventDefault();
-                    todoist.window.hide();
+                    verizonMessages.window.hide();
                 }
 
                 return false;
             });
 
-            todoist.window.on('hide', function() {
+            verizonMessages.window.on('hide', function() {
                 currentWindowState = 'hidden';
             });
 
-            todoist.window.on('show', function() {
+            verizonMessages.window.on('show', function() {
                 currentWindowState = 'shown';
             });
 
-            todoist.window.webContents.on('new-window', todoist.handleRedirect);
+            verizonMessages.window.webContents.on('new-window', verizonMessages.handleRedirect);
 
 
         },
         clearAppData() {
-            dialog.showMessageBox(todoist.window, {
+            dialog.showMessageBox(verizonMessages.window, {
                 type: 'warning',
                 buttons: ['Yes', 'Cancel'],
                 defaultId: 1,
@@ -472,11 +472,11 @@
                 if (response !== 0) {
                     return;
                 }
-                var session = todoist.window.webContents.session;
+                var session = verizonMessages.window.webContents.session;
 
                 session.clearStorageData(function() {
                     session.clearCache(function() {
-                        todoist.window.loadURL(mainUrl);
+                        verizonMessages.window.loadURL(mainUrl);
                     });
                 });
             });
@@ -489,25 +489,25 @@
             }
 
             globalShortcut.register('CmdOrCtrl+Alt+T', function() {
-                if (todoist.window.isFocused())
-                    todoist.window.hide();
+                if (verizonMessages.window.isFocused())
+                    verizonMessages.window.hide();
                 else
-                    todoist.window.show();
+                    verizonMessages.window.show();
             })
             // quick add task
             globalShortcut.register('CmdOrCtrl+Alt+A', () => {
                 // open quick add popup
-                todoist.window.webContents.sendInputEvent({
+                verizonMessages.window.webContents.sendInputEvent({
                     type: "char",
                     keyCode: 'q'
                 });
-                todoist.window.show();
+                verizonMessages.window.show();
             });
 
         },
 
         handleRedirect(e, url) {
-            if (url != todoist.window.webContents.getURL()) {
+            if (url != verizonMessages.window.webContents.getURL()) {
                 e.preventDefault()
                 shell.openExternal(url)
             }
@@ -591,8 +591,8 @@
 
     app.on('ready', () => {
 
-        todoist.init();
-        todoist.setupShortcuts();
+        verizonMessages.init();
+        verizonMessages.setupShortcuts();
 
 
     });

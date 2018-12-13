@@ -1,24 +1,27 @@
 {
-  "name": "Todoist",
-  "version": "1.0.1",
-  "description": "Todoist for linux",
+  "name": "VerizonMessages",
+  "version": "0.0.1",
+  "description": "Verizon Messages for linux",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ."
   },
   "keywords": [
-    "todoist",
+    "VerizonMessages",
+    "Verizon",
+    "messaging",
+    "SMS",
     "productivity",
     "gtd",
     "electron"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cyfrost/todoist-linux.git"
+    "url": "https://github.com/kevinsarsen/verizon-messages.git"
   },
-  "author": "Cyrus Frost <cyrus.frost@hotmail.com>",
-  "email": "cyrus.frost@hotmail.com",
+  "author": "Kevin Sarsen <kevinsarsen@pm.me>",
+  "email": "kevinsarsen@pm.me",
   "license": "MIT",
   "devDependencies": {
     "electron": "^2.0.6",
