@@ -4,6 +4,7 @@
 
 
     const app = require('electron').app;
+    const ipcMain = require('electron').ipcMain;
     const BrowserWindow = require('electron').BrowserWindow;
     const Tray = require('electron').Tray;
     const AppMenu = require('electron').AppMenu;
@@ -19,6 +20,16 @@
     const mainUrl = 'https://web.vma.vzw.com/vma/webs2/Message.do';
 
     let currentWindowState = 'shown';
+
+    ipcMain.on('notification', function(event, title, msg) {
+      console.log(title + ": " + msg.body); // prints "ping"
+      // event.sender.send('asynchronous-reply', 'pong')
+    });
+
+    ipcMain.on('unread-count', function(event, count) {
+      console.log("unread count: " + count); // prints "ping"
+      // event.sender.send('asynchronous-reply', 'pong')
+    });
 
 
     var shouldQuit = app.makeSingleInstance(function(commandLine, workingDirectory) {
@@ -275,10 +286,10 @@
                             verizonMessages.window.setFullScreen(!verizonMessages.window.isFullScreen());
                         }
                       }, {
-                        label: 'Display Dev Tools',
+                        label: 'Toggle Dev Tools',
                         accelerator: 'Ctrl+Shift+I',
                         click: function click() {
-                          verizonMessages.window.webContents.openDevTools();
+                          verizonMessages.window.webContents.toggleDevTools();
                         }
 
                     }]
@@ -397,12 +408,14 @@
                 "title": "Verizon Messages",
                 "show": false,
                 "autoHideMenuBar": config.get("autoHideMenuBar") == true,
-                "icon": path.join(__dirname, '/assets/icons/icon.png')
+                "icon": path.join(__dirname, '/assets/icons/icon.png'),
+                "webPreferences": {
+                  "nodeIntegration": false,
+                  "preload": path.join(__dirname,'/assets/js/preload.js')
+                },
             });
 
             verizonMessages.window.loadURL(mainUrl);
-
-            // verizonMessages.window.webContents.openDevTools();
 
             verizonMessages.window.webContents.on('did-finish-load', function(){
               verizonMessages.window.webContents.insertCSS(
