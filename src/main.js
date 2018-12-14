@@ -274,6 +274,13 @@
                         click: function click(item, focusedWindow) {
                             verizonMessages.window.setFullScreen(!verizonMessages.window.isFullScreen());
                         }
+                      }, {
+                        label: 'Display Dev Tools',
+                        accelerator: 'Ctrl+Shift+I',
+                        click: function click() {
+                          verizonMessages.window.webContents.openDevTools();
+                        }
+
                     }]
                 }, {
                     label: 'Window',
@@ -394,6 +401,68 @@
             });
 
             verizonMessages.window.loadURL(mainUrl);
+
+            // verizonMessages.window.webContents.openDevTools();
+
+            verizonMessages.window.webContents.on('did-finish-load', function(){
+              verizonMessages.window.webContents.insertCSS(
+                'html, body { height: 100% !important; width: 100% !important; }'+
+                '.fullscreen { top: 0px; }' +
+                '.contentNav { display: none !important; } '+
+                '#pageContents2 { margin: 0px 0px 0px 0px !important; width: 100% !important; height: 100% !important; } '+
+                '.buapContainer { height: 100% !important; width: 100% !important; min-height: unset !important; }'+
+                '#buapContents { height: 100% !important; width: 100% !important; float: none !important; min-height: unset !important; position: unset !important; }' +
+                '#buapContentsMessages > div.messageForm.clearfix { height: 100% !important; width: 100% !important; }' +
+                '#buapContentsMessages > div.messageForm.clearfix > div ' +
+                  '{ height: 100% !important; width: 100% !important; display: flex; flex-flow: row; }' +
+                '#conversation-new-message-wrapper { height: 90px !important; }' +
+                '#buapContentsMessages { height: 100% !important; width: 100% !important; position: unset !important; }' +
+                '#buapContentsMessages > div.messageForm.clearfix > div > div.conversation-list.composeMessageLeft' +
+                  ' {  width: 25% !important; '+
+                      'min-width: 200px !important; '+
+                      'max-width: unset !important; '+
+                      'height: 100% !important; '+
+                      'flex: 0 1 25%; ' +
+                    '}' +
+                '#vma-recipientListWrapper { height: 100% !important; }' +
+                '#convListWrapper { height: unset !important; }' +
+                '#conversation-box { display: flex; flex-flow: column; height: 100%; flex: 0 1 75%; width: unset !important; min-width: 200px !important; }' +
+                '#vma-composerTitle { flex: 0 1 50px; }'+
+                '#vma-composerContent { flex: 1 1 auto; display: flex; flex-flow: column; }' +
+                '#vma-chatContentWrapper { flex: 1 1 auto; display: flex; flex-flow: column; }' +
+                '#vma-chatContent { flex: 1 1 auto; display: flex; flex-flow: column; height: 100% !important; }' +
+                '.chatContentInner { max-height: 100% !important; }' +
+                'a > div.info.clearfix > div.msg { float: left !important; }' +
+                'a > div.avatarWrapper { margin: 15px 20px 15px 20px !important;}' +
+                '#composer-buttons { flex: 0 1 50px; }' +
+                '#reaction-menu { top: 0; }' +
+                '#contentEditableBlurFix { top: 0; }' +
+                '#msg-menu { top: 0 !important; }' +
+                '#vma-composerTitle > div > div.col.col-fullwidth > div > h1 { width: 100% !important; max-height: 43px; overflow: hidden; }' +
+                'span.chatBubble > span > span.msgContent.blueBubble.att {' +
+                  'float: right; ' +
+                  'border-radius: 10px 0 0 10px; '+
+                  'width: 100%; '+
+                '}'+
+                'span.chatBubble > span > span.msgContent.redBubble.att {' +
+                  'border-radius: 0 10px 10px 0; ' +
+                  'width: 100%; '+
+                '}' +
+                'img { \
+                  border-radius: 10px; \
+                  width: 100% !important; \
+                  height: auto !important; \
+                } \
+                .attachments { \
+                  padding: 10px; \
+                } \
+                div.uploadImage.image { \
+                    width: 100% !important; \
+                    height: auto !important; \
+                } \
+                '
+              );
+            });
 
             if (config.get("startminimized") != true) {
                 verizonMessages.window.show();
