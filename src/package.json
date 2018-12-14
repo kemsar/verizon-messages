@@ -1,6 +1,6 @@
 {
   "name": "VerizonMessages",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Verizon Messages for linux",
   "main": "main.js",
   "scripts": {

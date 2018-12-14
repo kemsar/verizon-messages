@@ -1,14 +1,14 @@
 {
-    "name": "Todoist",
+    "name": "VerizonMessages",
     "main": "src/main.js",
-    "author": "Cyrus Frost <cyrus.frost@hotmail.com>",
+    "author": "Kevin Sarsen <kevinsarsen@pm.me",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/cyfrost/verizonMessages-linux.git"
+        "url": "https://github.com/kevinsarsen/verizon-messages.git"
     },
     "build": {
-        "appId": "com.cyfrost.verizonMessages",
+        "appId": "com.kevinsarsen.verizonMessages",
         "directories": {
             "app": "src"
         },
