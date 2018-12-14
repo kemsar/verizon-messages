@@ -91,3 +91,7 @@ If you find an issue while using this app, please open a new Issue in the "Issue
 ## License
 
 This project is made available under the MIT License, you can obtain a full copy of it [here](https://opensource.org/licenses/MIT).
+
+## Acknowledgements
+
+I built this off of a copy of cyfrost's very good [Todoist for Linux project](https://github.com/cyfrost/todoist-linux).
