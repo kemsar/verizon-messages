@@ -5,7 +5,7 @@ function setNotificationCallback(callback) {
     const OldNotify = window.Notification;
     const newNotify = function(title, opt) {
         callback(title, opt);
-        return new OldNotify(title, opt);
+        // return new OldNotify(title, opt);
     };
     newNotify.requestPermission = OldNotify.requestPermission.bind(OldNotify);
     Object.defineProperty(newNotify, 'permission', {
@@ -22,11 +22,12 @@ function notifyNotificationCreate(title, opt) {
   ipcRenderer.send('notification', title, opt);
 }
 
-function notifyNotificationClick() {
-  ipcRenderer.send('notification-click');
-}
+// function notifyNotificationClick() {
+//   console.log('notification clicked');
+//   ipcRenderer.send('notification-click');
+// }
 
-setNotificationCallback(notifyNotificationCreate, notifyNotificationClick);
+setNotificationCallback(notifyNotificationCreate);
 
 // Select the node that will be observed for mutations
 window.onload = function() {
@@ -55,3 +56,4 @@ window.onload = function() {
   // Start observing the target node for configured mutations
   observer.observe(targetNode, config);
 }
+

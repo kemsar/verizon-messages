@@ -23,7 +23,23 @@
 
     ipcMain.on('notification', function(event, title, msg) {
       console.log(title + ": " + msg.body); // prints "ping"
-      // event.sender.send('asynchronous-reply', 'pong')
+      const notifier = require('node-notifier');
+      let nc = new notifier.NotificationCenter();
+      notifier.notify({
+        title:title,
+        message:msg.body,
+        icon: path.join(__dirname, 'assets','icons','icon_tray.png'),
+        wait: true
+      });
+      notifier.on('click', function(notifierObject, options) {
+        // Triggers if `wait: true` and user clicks notification
+        console.log('clicked')
+      });
+
+      notifier.on('timeout', function(notifierObject, options) {
+        // Triggers if `wait: true` and notification closes
+        console.log('timed out')
+      });
     });
 
     ipcMain.on('unread-count', function(event, count) {
@@ -31,7 +47,7 @@
       // event.sender.send('asynchronous-reply', 'pong')
     });
 
-
+    //TODO: 'app.makeSingleInstance(cb)' is deprecated. Use 'app.requestSingleInstanceLock() and app.on('second-instance', cb)' instead.
     var shouldQuit = app.makeSingleInstance(function(commandLine, workingDirectory) {
         // Someone tried to run a second instance, we should focus our window.
         if (verizonMessages.window) {

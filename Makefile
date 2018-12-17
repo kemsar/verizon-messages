@@ -11,7 +11,7 @@ packages:
 
 .PHONY: build
 build:
-	npm install && cd src && npm install && npm run start
+	npm install && cd src && npm install
 
 
 .PHONY: archive
