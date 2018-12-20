@@ -22,13 +22,12 @@
   let currentWindowState = 'shown';
 
   ipcMain.on('notification', function (event, title, msg) {
-    console.log(title + ": " + msg.body); // prints "ping"
     const notifier = require('node-notifier');
     let nc = new notifier.NotificationCenter();
     notifier.notify({
       title: title,
       message: msg.body,
-      icon: path.join(__dirname, 'assets', 'icons', 'icon_tray.png'),
+      icon: path.join(app.getPath('userData'), 'icon_tray.png'),
       wait: true
     });
 
@@ -71,8 +70,8 @@
           )
         })
         .then(function (newImg) {
-          newImg.write(path.join(__dirname, 'assets', 'icons', 'tmp.png'), () => {
-            verizonMessages.tray.setImage(path.join(__dirname, 'assets', 'icons', 'tmp.png'));
+          newImg.write(app.getPath('userData') + "/tmp.png", () => {
+            verizonMessages.tray.setImage(app.getPath('userData') + "/tmp.png");
           });
         })
         .catch(function (err) {
@@ -230,6 +229,7 @@
       verizonMessages.clearCache();
       verizonMessages.openWindow();
       config.applyConfiguration();
+      fs.copyFile(path.join(__dirname, 'assets', 'icons', 'icon_tray.png'), app.getPath('userData'));
     },
 
     createMenu() {
