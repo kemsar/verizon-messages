@@ -1,5 +1,5 @@
 DIST_DIR=dist
-VERSION=1.1.4
+VERSION=1.1.5
 
 .PHONY: run
 run:
