@@ -160,6 +160,11 @@ img {
     height: auto !important;
 }
 
+img.emo {
+    height: 18px !important;
+    width: 18px !important;
+}
+
 .attachments {
     padding: 10px;
 }

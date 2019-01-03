@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/verizon-messages.iml" filepath="$PROJECT_DIR$/verizon-messages.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/verizon-messages.iml" filepath="$PROJECT_DIR$/.idea/verizon-messages.iml" />
     </modules>
   </component>
 </project>
