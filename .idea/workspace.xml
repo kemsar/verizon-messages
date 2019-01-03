@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d5f105cc-4676-4251-86a9-86236198839a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#810#1394#0" expanded="true" />
+                <element signature="e#1125#1224#0" expanded="true" />
+                <element signature="e#1290#1386#0" expanded="true" />
+                <element signature="e#1450#2599#0" expanded="true" />
+                <element signature="e#1712#1849#0" expanded="true" />
+                <element signature="e#1881#2197#0" expanded="true" />
+                <element signature="e#2231#2406#0" expanded="true" />
+                <element signature="e#2300#2394#0" expanded="true" />
+                <element signature="e#2438#2479#0" expanded="true" />
+                <element signature="e#2821#3016#0" expanded="true" />
+                <element signature="e#4681#4767#0" expanded="true" />
+                <element signature="e#4843#4929#0" expanded="true" />
+                <element signature="e#6805#6847#0" expanded="true" />
+                <element signature="e#6945#7006#0" expanded="true" />
+                <element signature="e#7186#7263#0" expanded="true" />
+                <element signature="e#7946#8041#0" expanded="true" />
+                <element signature="e#8634#8708#0" expanded="true" />
+                <element signature="e#8830#8907#0" expanded="true" />
+                <element signature="e#9032#9094#0" expanded="true" />
+                <element signature="e#9283#9390#0" expanded="true" />
+                <element signature="e#9522#9604#0" expanded="true" />
+                <element signature="e#10053#10096#0" expanded="true" />
+                <element signature="e#10676#10776#0" expanded="true" />
+                <element signature="e#10906#11366#0" expanded="true" />
+                <element signature="e#11445#11488#0" expanded="true" />
+                <element signature="e#11598#11637#0" expanded="true" />
+                <element signature="e#11713#11784#0" expanded="true" />
+                <element signature="e#11851#11939#0" expanded="true" />
+                <element signature="e#12855#13348#0" expanded="true" />
+                <element signature="e#12999#13108#0" expanded="true" />
+                <element signature="e#13404#13725#0" expanded="true" />
+                <element signature="e#13783#14104#0" expanded="true" />
+                <element signature="e#14156#14493#0" expanded="true" />
+                <element signature="e#14532#14591#0" expanded="true" />
+                <element signature="e#14693#14773#0" expanded="true" />
+                <element signature="e#14835#14982#0" expanded="true" />
+                <element signature="e#15038#15086#0" expanded="true" />
+                <element signature="e#15142#15189#0" expanded="true" />
+                <element signature="e#15646#15949#0" expanded="true" />
+                <element signature="e#15818#15939#0" expanded="true" />
+                <element signature="e#15861#15927#0" expanded="true" />
+                <element signature="e#16121#16273#0" expanded="true" />
+                <element signature="e#16354#16553#0" expanded="true" />
+                <element signature="e#17581#17622#0" expanded="true" />
+                <element signature="e#18445#18535#0" expanded="true" />
+                <element signature="e#18576#18614#0" expanded="true" />
+                <element signature="e#18653#18724#0" expanded="true" />
+                <element signature="e#18762#18859#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/css/stylesheet_inject.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>tray</find>
+      <find>path.join(__dirname, 'assets','icons','icon_tray.png')</find>
+      <find>jquery</find>
+      <find>CSS</find>
+      <find>devt</find>
+      <find>\</find>
+      <find>filesy</find>
+      <find>unread-count</find>
+      <find>title</find>
+      <find>img</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/assets/js/utils.js" />
+        <option value="$PROJECT_DIR$/src/assets/js/passive.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" />
+        <option value="$PROJECT_DIR$/src/assets/js/preload.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/assets/css/stylesheet_inject.css" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/src/package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="22" />
+    <option name="width" value="1366" />
+    <option name="height" value="746" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="verizon-messages" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546545995826" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
+    <property name="javascript.nodejs.core.library.configured.version" value="8.10.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/node_modules/electron/dist/electron" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="$USER_HOME$/.nvm/versions/node/v6.9.5/bin/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.electron">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="debug main" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="9229" restartOnDisconnect="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="debug renderer" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="9222" restartOnDisconnect="true">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="makefile build" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="build" workingDirectory="$PROJECT_DIR$" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="electron" type="NodeJSConfigurationType" singleton="false" path-to-node="$PROJECT_DIR$/src/node_modules/electron/dist/electron" node-parameters=". --inspect=9229 --remote-debugging-port=9222" path-to-js-file="main.js" working-dir="$PROJECT_DIR$/src">
+      <method v="2">
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="makefile build" run_configuration_type="MAKEFILE_TARGET_RUN_CONFIGURATION" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="npm run start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/src/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Attach to Node.js/Chrome.debug main" />
+      <item itemvalue="Attach to Node.js/Chrome.debug renderer" />
+      <item itemvalue="Makefile.makefile build" />
+      <item itemvalue="Node.js.electron" />
+      <item itemvalue="npm.npm run start" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5f105cc-4676-4251-86a9-86236198839a" name="Default Changelist" comment="" />
+      <created>1545064394512</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545064394512</updated>
+      <workItem from="1545064410064" duration="702000" />
+      <workItem from="1545065342216" duration="54000" />
+      <workItem from="1545065427210" duration="18453000" />
+      <workItem from="1545145915881" duration="22340000" />
+      <workItem from="1545181691128" duration="11982000" />
+      <workItem from="1545318656270" duration="116000" />
+      <workItem from="1545318798417" duration="19450000" />
+      <workItem from="1546543820169" duration="1485000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="74588000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1366" height="746" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6290909" visible="true" weight="0.1875" />
+      <window_info id="Structure" order="1" sideWeight="0.3709091" side_tool="true" visible="true" weight="0.1875" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="npm" order="7" sideWeight="0.50166667" side_tool="true" weight="0.17800212" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.35306704" weight="0.35614973" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4989373" visible="true" weight="0.11717496" />
+      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5031881" side_tool="true" weight="0.3301179" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32941177" />
+      <window_info anchor="bottom" id="IvyIDEA" order="11" />
+      <window_info anchor="bottom" x="935" y="265" width="982" height="1077" id="Debug" order="12" sideWeight="0.64693296" side_tool="true" weight="0.35691318" />
+      <window_info anchor="right" id="make" order="0" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="SciView" order="10" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint suspend="NONE" type="javascript-exception">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app.js" />
+    <entry file="file://$PROJECT_DIR$/src/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/html/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/stylesheet_common.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verizon-messages.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/js/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="1" selection-start-column="7" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#eventListenerOptionsSupported#0;n#eventListenerOptionsSupported#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/js/passive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+          <folding>
+            <element signature="e#44#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/icons/icon_transp.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/icons/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/icons/OLD/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/js/preload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="109" column="30" selection-start-line="109" selection-start-column="30" selection-end-line="113" selection-end-column="40" />
+          <folding>
+            <element signature="e#1677#1749#0" expanded="true" />
+            <element signature="e#1900#1942#0" expanded="true" />
+            <element signature="n#!!block;n#initMutationObserver#0" expanded="true" />
+            <element signature="e#2712#2916#0" expanded="true" />
+            <element signature="e#3894#3964#0" expanded="true" />
+            <element signature="e#4268#4352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/stylesheet_inject.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#810#1394#0" expanded="true" />
+            <element signature="e#1125#1224#0" expanded="true" />
+            <element signature="e#1290#1386#0" expanded="true" />
+            <element signature="e#1450#2599#0" expanded="true" />
+            <element signature="e#1712#1849#0" expanded="true" />
+            <element signature="e#1881#2197#0" expanded="true" />
+            <element signature="e#2231#2406#0" expanded="true" />
+            <element signature="e#2300#2394#0" expanded="true" />
+            <element signature="e#2438#2479#0" expanded="true" />
+            <element signature="e#2821#3016#0" expanded="true" />
+            <element signature="e#4681#4767#0" expanded="true" />
+            <element signature="e#4843#4929#0" expanded="true" />
+            <element signature="e#6805#6847#0" expanded="true" />
+            <element signature="e#6945#7006#0" expanded="true" />
+            <element signature="e#7186#7263#0" expanded="true" />
+            <element signature="e#7946#8041#0" expanded="true" />
+            <element signature="e#8634#8708#0" expanded="true" />
+            <element signature="e#8830#8907#0" expanded="true" />
+            <element signature="e#9032#9094#0" expanded="true" />
+            <element signature="e#9283#9390#0" expanded="true" />
+            <element signature="e#9522#9604#0" expanded="true" />
+            <element signature="e#10053#10096#0" expanded="true" />
+            <element signature="e#10676#10776#0" expanded="true" />
+            <element signature="e#10906#11366#0" expanded="true" />
+            <element signature="e#11445#11488#0" expanded="true" />
+            <element signature="e#11598#11637#0" expanded="true" />
+            <element signature="e#11713#11784#0" expanded="true" />
+            <element signature="e#11851#11939#0" expanded="true" />
+            <element signature="e#12855#13348#0" expanded="true" />
+            <element signature="e#12999#13108#0" expanded="true" />
+            <element signature="e#13404#13725#0" expanded="true" />
+            <element signature="e#13783#14104#0" expanded="true" />
+            <element signature="e#14156#14493#0" expanded="true" />
+            <element signature="e#14532#14591#0" expanded="true" />
+            <element signature="e#14693#14773#0" expanded="true" />
+            <element signature="e#14835#14982#0" expanded="true" />
+            <element signature="e#15038#15086#0" expanded="true" />
+            <element signature="e#15142#15189#0" expanded="true" />
+            <element signature="e#15646#15949#0" expanded="true" />
+            <element signature="e#15818#15939#0" expanded="true" />
+            <element signature="e#15861#15927#0" expanded="true" />
+            <element signature="e#16121#16273#0" expanded="true" />
+            <element signature="e#16354#16553#0" expanded="true" />
+            <element signature="e#17581#17622#0" expanded="true" />
+            <element signature="e#18445#18535#0" expanded="true" />
+            <element signature="e#18576#18614#0" expanded="true" />
+            <element signature="e#18653#18724#0" expanded="true" />
+            <element signature="e#18762#18859#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Detection</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>electron-DefinitelyTyped</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>verizon-messages</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

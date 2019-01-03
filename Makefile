@@ -1,5 +1,5 @@
 DIST_DIR=dist
-VERSION=1.0.0
+VERSION=1.1.5
 
 .PHONY: run
 run:
@@ -11,7 +11,7 @@ packages:
 
 .PHONY: build
 build:
-	npm install && cd src && npm install && npm run start
+	npm install && cd src && npm install
 
 
 .PHONY: archive

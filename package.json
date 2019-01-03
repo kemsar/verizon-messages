@@ -1,27 +1,31 @@
 {
-    "name": "VerizonMessages",
-    "main": "src/main.js",
-    "author": "Kevin Sarsen <kevinsarsen@pm.me",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/kevinsarsen/verizon-messages.git"
+  "name": "VerizonMessages",
+  "main": "src/main.js",
+  "author": "Kevin Sarsen <kevinsarsen@pm.me>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevinsarsen/verizon-messages.git"
+  },
+  "build": {
+    "appId": "com.kevinsarsen.verizonMessages",
+    "directories": {
+      "app": "src"
     },
-    "build": {
-        "appId": "com.kevinsarsen.verizonMessages",
-        "directories": {
-            "app": "src"
-        },
-        "linux": {
-            "target": [
-                "deb",
-                "rpm",
-                "AppImage"
-            ],
-            "category": "Office;Utility;"
-        }
-    },
-    "devDependencies": {
-        "electron-builder": "^20.26.1"
+    "linux": {
+      "target": [
+        "deb",
+        "rpm",
+        "AppImage"
+      ],
+      "category": "Office;Utility;"
     }
+  },
+  "devDependencies": {
+    "electron-builder": "^20.26.1"
+  },
+  "dependencies": {
+    "jimp": "^0.6.0",
+    "node-notifier": "^5.3.0"
+  }
 }
